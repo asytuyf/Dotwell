@@ -15,22 +15,23 @@ built this for managing my NixOS rices but works with anything.
 ```bash
 git clone https://github.com/asytuyf/dotwell.git
 cd dotwell
-cargo install --path .
 ```
 
-make sure `~/.cargo/bin` is in your PATH:
+use a shell alias so `dwell` runs the project without installing it:
 
 **nixos (home.nix):**
 ```nix
-home.sessionPath = [ "$HOME/.cargo/bin" ];
+programs.zsh.shellAliases = {
+  dwell = "cargo run --manifest-path ${config.home.homeDirectory}/personel_projects/dotwell/Cargo.toml --";
+};
 ```
 
 **bash/zsh:**
 ```bash
-export PATH="$HOME/.cargo/bin:$PATH"
+alias dwell='cargo run --manifest-path "$HOME/personel_projects/dotwell/Cargo.toml" --'
 ```
 
-then run `dwell` from anywhere.
+then run `dwell` from anywhere (first run will compile).
 
 ## usage
 
