@@ -1,6 +1,6 @@
-# dotwell
+# Dotwell
 
-> still cooking 🚧
+> still in development 🚧
 
 a TUI for managing dotfiles and rice themes. switch between configs with one keystroke.
 
