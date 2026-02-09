@@ -18,7 +18,19 @@ cd dotwell
 cargo install --path .
 ```
 
-now you can run `dwell` from anywhere.
+make sure `~/.cargo/bin` is in your PATH:
+
+**nixos (home.nix):**
+```nix
+home.sessionPath = [ "$HOME/.cargo/bin" ];
+```
+
+**bash/zsh:**
+```bash
+export PATH="$HOME/.cargo/bin:$PATH"
+```
+
+then run `dwell` from anywhere.
 
 ## usage
 
