@@ -13,7 +13,7 @@ built this for managing my NixOS rices but works with anything.
 ## install
 
 ```bash
-git clone https://github.com/yourusername/dotwell.git
+git clone https://github.com/asytuyf/dotwell.git
 cd dotwell
 cargo install --path .
 ```
