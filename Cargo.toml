@@ -1,0 +1,19 @@
+[[bin]]
+name = "dwell"
+path = "src/main.rs"
+
+[package]
+name = "dotwell"
+version = "0.1.0"
+edition = "2021"
+authors = ["Asytuyf <nabaoui21@gmail.com>"]
+description = "A TUI for managing dotfiles and rice themes"
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+color-eyre = "0.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+dirs = "5.0"
